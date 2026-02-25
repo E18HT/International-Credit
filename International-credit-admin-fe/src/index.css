@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  overflow: hidden;
+  height: 100vh;
+}
+
+code {
+  font-family: "JetBrains Mono", "Monaco", "Consolas", "Courier New", monospace;
+}
+
+@layer base {
+  :root {
+    /* IC Brand Colors */
+    --ic-blue: 221 71% 32%;
+    --ic-blue-light: 221 71% 40%;
+    --ic-blue-lighter: 221 71% 50%;
+    --ic-gold: 38 92% 50%;
+    --ic-gold-light: 45 93% 65%;
+
+    /* Grayscale Palette */
+    --gray-50: 210 20% 98%;
+    --gray-100: 210 20% 96%;
+    --gray-200: 214 32% 91%;
+    --gray-300: 213 27% 84%;
+    --gray-400: 215 20% 65%;
+    --gray-500: 215 16% 47%;
+    --gray-600: 215 19% 35%;
+    --gray-700: 215 25% 27%;
+    --gray-800: 215 28% 17%;
+    --gray-900: 222 84% 5%;
+
+    /* Semantic Colors */
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+    --error: 0 84% 60%;
+    --info: 221 71% 50%;
+
+    /* Legacy shadcn variables for compatibility */
+    --background: 0 0% 100%;
+    --foreground: 215 28% 17%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+    --primary: 221 71% 32%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 215 28% 17%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 20% 96%;
+    --accent-foreground: 215 28% 17%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 71% 32%;
+    --chart-1: 221 71% 32%;
+    --chart-2: 38 92% 50%;
+    --chart-3: 142 76% 36%;
+    --chart-4: 0 84% 60%;
+    --chart-5: 215 16% 47%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 215 28% 17%;
+    --foreground: 210 20% 98%;
+    --card: 215 28% 17%;
+    --card-foreground: 210 20% 98%;
+    --popover: 215 28% 17%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 210 20% 98%;
+    --primary-foreground: 215 28% 17%;
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 25% 27%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 215 25% 27%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 25% 27%;
+    --input: 215 25% 27%;
+    --ring: 210 20% 98%;
+    --chart-1: 221 71% 50%;
+    --chart-2: 38 92% 60%;
+    --chart-3: 142 76% 50%;
+    --chart-4: 0 84% 70%;
+    --chart-5: 215 20% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

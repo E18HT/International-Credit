@@ -1,0 +1,7 @@
+env
+node_modules
+.env
+logs
+
+# Firebase service account (security sensitive)
+firebase-service-account.json
